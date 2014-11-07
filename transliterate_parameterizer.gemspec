@@ -7,9 +7,9 @@ Gem::Specification.new do |spec|
   spec.name          = "transliterate_parameterizer"
   spec.version       = TransliterateParameterizer::VERSION
   spec.authors       = ["Eduardo Turiño"]
-  spec.email         = ["(none)"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.email         = ["eturino@eturino.com"]
+  spec.summary       = %q{Basic utility on top of ActiveSupport to transliterate and parameterize strings}
+  # spec.description   = %q{TODO: Write a longer description. Optional.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -18,6 +18,16 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
+  spec.add_dependency "activesupport"
+
   spec.add_development_dependency "bundler", "~> 1.7"
   spec.add_development_dependency "rake", "~> 10.0"
+
+  spec.add_development_dependency "rspec", '~> 3.0'
+  spec.add_development_dependency "rspec-nc"
+  spec.add_development_dependency "pry"
+  spec.add_development_dependency "pry-nav"
+  spec.add_development_dependency "pry-rescue"
+  spec.add_development_dependency "pry-stack_explorer"
+  spec.add_development_dependency "pry-doc"
 end
