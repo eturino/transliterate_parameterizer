@@ -1,8 +1,8 @@
 require 'bundler/setup'
 Bundler.setup
 
-# require 'codeclimate-test-reporter'
-# CodeClimate::TestReporter.start
+require 'codeclimate-test-reporter'
+CodeClimate::TestReporter.start
 
 require 'pry'
 require 'transliterate_parameterizer'

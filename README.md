@@ -38,7 +38,12 @@ text = "I'm He_Man!"
 TransliterateParameterizer.parameterize text, false # => "i-m-he_man"
 ```
 
+The text will be transliterated using `ActiveSupport::Inflector.transliterate` before being parameterized.
 
+```ruby
+text = "Hoy no, mejor mañana"
+TransliterateParameterizer.parameterize text # => "hoy-no-mejor-manana"
+```
 
 ## Contributing
 

@@ -1,7 +1,15 @@
 language: ruby
+cache: bundler
+
+addons:
+  code_climate:
+    repo_token: 92f049dc02f15b8aa8e4a9795bf3d4474f069c7fa811c54767c61964be33e2d1
+
 
 rvm:
-  - "2.1.1"
+  - 2.1.1
+
+script: 'bundle exec rake spec'
 
 notifications:
   email:
