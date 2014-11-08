@@ -1,5 +1,11 @@
 # TransliterateParameterizer
 
+[![Gem Version](https://badge.fury.io/rb/transliterate_parameterizer.svg)](http://badge.fury.io/rb/transliterate_parameterizer)
+[![Build Status](https://travis-ci.org/eturino/transliterate_parameterizer.svg?branch=master)](https://travis-ci.org/eturino/transliterate_parameterizer)
+[![Code Climate](https://codeclimate.com/github/eturino/transliterate_parameterizer.png)](https://codeclimate.com/github/eturino/transliterate_parameterizer)
+[![Code Climate Coverage](https://codeclimate.com/github/eturino/transliterate_parameterizer/coverage.png)](https://codeclimate.com/github/eturino/transliterate_parameterizer)
+
+
 Basic utility to transliterate and parameterize strings, based on ActiveSupport.
 
 ## Installation
