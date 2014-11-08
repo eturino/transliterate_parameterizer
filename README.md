@@ -1,6 +1,6 @@
 # TransliterateParameterizer
 
-Basic utility to transliterate and parameterize strings, based on ActiveSupport
+Basic utility to transliterate and parameterize strings, based on ActiveSupport.
 
 ## Installation
 
@@ -20,7 +20,25 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Call the `parameterize` method in the `TransliterateParameterizer` module, passing the text as parameter.
+
+```ruby
+text = "I'm He-Man!"
+TransliterateParameterizer.parameterize text # => "i-m-he-man"
+```
+
+By default, any underscore (_) will be modified to a dash (-). You can disable this behaviour by passing false a 2nd parameter.
+
+```ruby
+text = "I'm He_Man!"
+TransliterateParameterizer.parameterize text # => "i-m-he-man"
+
+
+text = "I'm He_Man!"
+TransliterateParameterizer.parameterize text, false # => "i-m-he_man"
+```
+
+
 
 ## Contributing
 
